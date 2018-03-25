@@ -6,6 +6,7 @@ class Home extends Component {
         return (
             <div>
                 <h1>test test test</h1>
+                <img src = {require('../assets/svg/conference-hall.svg')} alt = "cinema-svg"/>
             </div>
         );
     }
