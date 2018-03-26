@@ -1,40 +1,23 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import { MainDiv, Korba, BodyDiv, Div, H1CC, Image, LogoDiv, TitleDiv } from '../styles/HomeStyle';
 
-const Image = styled.img`
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 10%;
-`;
 
-const MainDiv = styled.div`
-    width: 100%;
-`;
-
-const Div = styled.div`
-    width: 100%;
-    background-color: rgba(0, 0 ,0, 0.8);
-    padding: 20px;
-`;
-
-const BodyDiv = styled.div`
-    width: 100%;
-    background-color: rgba(255, 255 ,255, 0.9);
-    padding: 20px;
-    margin: 0, 30px;
-`;
 
 class Home extends Component {
     render() {
         return (
             <MainDiv>
-                <Div class = "logo-header">
-                    <h1>test test test</h1>
-                    <Image src = {require('../assets/svg/conference-hall.svg')} alt = "cinema-svg" class = "cinema-logo"/>
+                <Div>
+                    <TitleDiv>
+                        <Korba>korba</Korba> <H1CC>Cinema Crawler</H1CC>
+                    </TitleDiv>
+                    <LogoDiv>
+                        <Image src = {require('../assets/svg/conference-hall.svg')} alt = "cinema-svg" class = "cinema-logo"/>
+                    </LogoDiv>
+
                 </Div>
                 <BodyDiv>
-                    <h2>test test test</h2>
+                    <h2>Tekst skopiowany z wikipedii.</h2>
                     <p>
                         dziedzina działalności człowieka związana z produkcją filmów oraz ich rozpowszechnianiem i wyświetlaniem w kinach.
                         Przemysł filmowy w poszczególnych krajach określa się mianem „kinematografii narodowej”.
