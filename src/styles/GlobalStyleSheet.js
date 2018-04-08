@@ -4,8 +4,12 @@ import { injectGlobal } from 'styled-components';
 injectGlobal`
 @import url('https://fonts.googleapis.com/css?family=Anton|Lato|Raleway');
 
+* {
+    box-sizing: border-box;
+}
+
 html{
-    background: url(https://s3.eu-central-1.amazonaws.com/assets.theinsiter.org/images/cropped/cinema-1-1455228829.jpg) no-repeat center center fixed; 
+    background: url(http://www.kinyu-z.net/data/wallpapers/228/1503818.jpg) no-repeat center center fixed; 
     background-size: cover;
 }
 body {
@@ -22,4 +26,25 @@ h2 {
     font-family: 'Raleway', sans-serif;
     color: #444;
 }
+
+.dropdown-content {
+    position: absolute;
+    display: none;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #ddd;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
 `
